@@ -49,7 +49,7 @@ h3 {  /*Underrubrik styling för mobil och desktop*/
     }
 }
 
-h5 {
+h5 {  /*Underrubrik på kort, styling för mobil och desktop*/
     font: bold 16px/18.2px Maven Pro;
     color: black;
 }
@@ -63,13 +63,13 @@ p {  /*Stycke styling för mobil och desktop*/
     }
 }
 
-.p2 {
+.p2 {/*Text på kort, styling för mobil och desktop*/
     font: normal 13px/28.2px Maven Pro;
     color: black;
 }
 
 .page {   /*Centrera och begränsa sidinnehållets bredd*/
-    background-color: rgb(208, 252, 237);
+    background-color: rgb(220, 247, 238);
     max-width: 990px;
     margin: auto;
 }
@@ -104,7 +104,7 @@ header {   /*Header box*/
     }
 }
 
-.grid-item {
+.grid-item {  /*Hero-bilden i header*/
     background-image: url("assets/images/hand.jpeg");
     background-size:  cover;
     background-position: center;
@@ -113,13 +113,13 @@ header {   /*Header box*/
     grid-area: a;
 }
 
-.grid-item2 {
+.grid-item2 {  /*Ikon 1 i header*/
     background-color: rgba(158, 109, 82, 1);
     grid-area: b;
     position: relative;
 }
 
-.grid-item3 {
+.grid-item3 {  /*Ikon 2 i header*/
     background: rgba(10, 132, 110, 1);
     grid-area: c;
     position: relative;
@@ -148,12 +148,12 @@ header {   /*Header box*/
     }
 }
 
-.icon {
+.icon {  /*Bas-storlek på ikoner*/
     width: 50%;
     height: 50%;
 }
 
-.icon--center {
+.icon--center {  /*Centrera ikon*/
     position: absolute;
     top: 50%;
     left: 50%;
@@ -161,24 +161,24 @@ header {   /*Header box*/
     cursor: pointer;
 }
 
-.icon--stor {
+.icon--stor {  /*Gör ikon större*/
     height: 80%;
 }
 
-.icon--card {
+.icon--card {  /*Placera ikon på kort*/
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.icon--low-right {
+.icon--low-right {  /*Ikon som ska vara nere i högra hörnet på kort*/
     width: 24px;
     height: 24px;
     transform: none;
 }
 
-.nav-list {
+.nav-list {  /*Göm navigationsmeny och visa vid desktop*/
     background-color: rgb(242, 253, 253);
     display: none;
     @media only screen and (min-width: 600px) {
@@ -186,13 +186,13 @@ header {   /*Header box*/
     }
 }
 
-.nav-list__ul {
+.nav-bar {  /*Styling för navbar*/
     flex: 0 0 100%;
     list-style: none;
     display: flex;
 }
 
-.nav-list__ul--li, .nav-list__ul--li2, .nav-list__ul--li3, .nav-list__ul--li4{
+.nav-bar__li {  /*Elementen i navbar*/
     flex: 0 0 25%;
     display: flex;
     align-items: center;
@@ -206,14 +206,14 @@ header {   /*Header box*/
     }
 }
 
-.formular {  /*formulär på tips sida*/
+.formular {  /* Sektion för formulär på tips-sida*/
     padding: 2rem;
     @media only screen and (min-width: 600px) {
         margin-top: 2rem;
     }
 }
 
-.tips-h1 {  /*h1 till tips.html*/
+.tips-h1 {  /*Rubrik till formulär på tips-sidan*/
     font: normal 24px Open Sans;
     color: black;
     margin: auto;
@@ -223,7 +223,7 @@ header {   /*Header box*/
     }
 }
 
-.form{
+.form {  /* Formulär */
     display: grid;
     gap: .5rem;
     grid-template-columns: repeat(3, 1fr);
@@ -238,22 +238,20 @@ header {   /*Header box*/
     }
 }
 
-.form__lab {
+.form__lab {  /*Etikett i formulär*/
     font: normal 16px Open Sans;
     margin-top: .5rem;
 }
 
-.form__lab--labelP {
+.form__lab--labelP {  /*Placering av etikett i grid*/
     grid-area: label1;
 }
 
-.form__lab--labelD {
+.form__lab--labelD {  /*Placering av etikett i grid*/
     grid-area: label2;
 }
 
-.form__inp {
-    /* width: 344px;
-    height: 52px; */
+.form__inp {   /*Inmatningsfält*/
     border: none;
     border-radius: 5px;
     box-shadow: 0px 1px 3px 0px #4e4d4d;
@@ -265,23 +263,22 @@ header {   /*Header box*/
     }
 }
 
-.form__inp--infieldP {
+.form__inp--infieldP {  /*Placering av inmatningsfält i grid*/
     grid-area: infield1;
 }
 
-.form__inp--infieldD {
+.form__inp--infieldD {  /*Placering av inmatningsfält i grid*/
     grid-area: infield2;
 }
 
-.form__button--center {
+.form__button--center {  /*Placering av submit-knapp i grid*/
     grid-area: knapp;
     @media only screen and (min-width: 600px) {
         justify-self: center;
     }
 }
 
-
-.tips {
+.tips {  /*Sektioner med tips och händelser*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -293,7 +290,7 @@ header {   /*Header box*/
     }
 }
 
-.tips__text {
+.tips__text {  /*Styling av text i ovan sektioner*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -304,7 +301,7 @@ header {   /*Header box*/
     }
 }
 
-.tips__plant {
+.tips__plant {  /*Styling av ikoner med bg*/
     background-color:  rgba(10, 132, 110, 1);
     width: 240px;
     height: 240px;
@@ -328,7 +325,7 @@ header {   /*Header box*/
     }
 }
 
-button, .button, .form__button {
+button, .button, .form__button, .tips__button {  /*Styling av knappar döpta enligt BEM*/
     font-family: Open Sans;
     font-style: normal;
     font-size: large;
@@ -336,13 +333,13 @@ button, .button, .form__button {
     background-color: rgba(10, 132, 110, 1);
     border: none;
     border-radius: 10px;
-    max-width: 200px;
+    max-width: max-content;
     color: white;
     padding: .5rem 1.5rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 1rem 0;
+    margin: 2rem 0;
     cursor: pointer;
     align-self: center;
     box-shadow: 0 3px 6px #383838;
@@ -351,30 +348,30 @@ button, .button, .form__button {
     }
 }
 
-.tips__text--right {
+.tips__button--right {  /*Placera 'tips-knapp' till höger*/
     @media only screen and (min-width: 600px){
-        margin: 1rem 0px 0px auto;
+        margin: 1rem 0 0 auto;
     }
 }
 
-.tips__text--left {
+.tips__button--left {  /*Placera 'tips-knapp' till vänster*/
     @media only screen and (min-width: 600px){
-        margin: 1rem auto  0px 0px;
+        margin: 1rem auto 0px 0px;
     }
 }
 
-hr {
+hr {  /*Styling av skiljelinje*/
     width: 202px;
     border: 2px solid rgba(5, 86, 71, 1);
     margin: 1rem auto;
 }
 
-main {
+main {  /*'Main'-container för innehåll*/
     display: flex;
     flex-direction: column;
 }
 
-.plant {
+.plant {  /*Grid för plant-kort*/
     padding: 1rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -390,7 +387,7 @@ main {
     }
 }
 
-.plant-tips {
+.plant-tips {  /*Grid 1 för kort på tips-sidan*/
     padding: 1rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -403,7 +400,7 @@ main {
     }
 }
 
-.plant-tips2 {
+.plant-tips2 {  /*Grid 2 för kort på tips-sidan*/
     padding: 1rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -589,7 +586,6 @@ main {
 }
 
 .flytt {  /*Styling för avslutande del i sidfot med länk*/
-    background-color: blue;
     width: 100%;
     min-height: min-content;
     padding: 1rem;
@@ -600,4 +596,5 @@ main {
     font: bold 16px Open Sans;
     color: black;
     text-decoration: none;
+    display: inline-flex;
 }

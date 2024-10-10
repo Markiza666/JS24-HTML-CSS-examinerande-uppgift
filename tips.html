@@ -16,7 +16,7 @@
     </head>
     <body>
         <div class="page">
-            <header class="header2">
+            <header class="header2" id="top">
                 <div class="hamburger">
                     <a href="index.html">
                         <img src="assets/icons/burgir.png" alt="#">
@@ -30,16 +30,16 @@
                 </div>
             </header>
             <main>
-                <div class="form">
+                <section class="formular">
                     <h1 class="tips-h1">Lägg till ny plantering:</h1>
                     <form class="form" action="#">
-                        <label class="form__lab" for="fname">Planta:</label>
-                        <input class="form__inp" type="text" id="namn" name="namn" placeholder="Text">
-                        <label class="form__lab" for="fname">Datum:</label>
-                        <input class="form__inp" type="text" id="data" name="data" placeholder="DD/MM-2024">
-                        <input class="button" type="submit" value="Lägg till">
+                        <label class="form__lab form__lab--labelP" for="namn">Planta:</label><br>
+                        <input class="form__inp form__inp--infieldP" type="text" id="namn" name="namn" placeholder="Text"><br>
+                        <label class="form__lab form__lab--labelD" for="data">Datum:</label><br>
+                        <input class="form__inp form__inp--infieldD" type="text" id="data" name="data" placeholder="DD/MM-2024"><br>
+                        <input class="form__button form__button--center" type="submit" value="Lägg till">
                     </form>
-                </div>
+                </section>
                 <h3>Dina planerade planteringar:</h3>
                 <section class="plant-tips">
                     <article class="card card--pic1">
@@ -87,25 +87,24 @@
                 </section>
                 <div class="gallery">
                     <div class="gallery__img">
-                        <figure>
-                            <img src="assets/images/tjejmedhatt.avif" alt="" width="600" height="400">
-                        </figure></div>
-                    <div class="gallery__img">
-                        <figure>
-                            <img src="assets/images/plockar.avif" alt="" width="600" height="400">
-                        </figure></div>
-                    <div class="gallery__img">
-                        <figure>
-                            <img src="assets/images/massagrönsaker.avif" alt="" width="600" height="400">
+                        <figure class="gallery__img--cola1">
+                            <img src="assets/images/tjejmedhatt.avif" alt="">
                         </figure>
-                    </div>
-                    <div class="gallery__img">
-                        <figure>
-                            <img src="assets/images/vattenkanna.avif" alt="" width="600" height="400">
+                        <figure class="gallery__img--cola2">
+                            <img src="assets/images/plockar.avif" alt="">
+                        </figure>
+                        <figure class="gallery__img--colb1">
+                            <img src="assets/images/massagrönsaker.avif" alt="">
+                        </figure>
+                        <figure class="gallery__img--colb2">
+                            <img src="assets/images/vattenkanna.avif" alt="">
                         </figure>
                     </div>
                 </div>
             </main>
+            <div class="flytt">
+              <a class="flytt__move" href="#top">Till toppen av sidan</a>
+            </div>
         </div>
     </body>
 </html>

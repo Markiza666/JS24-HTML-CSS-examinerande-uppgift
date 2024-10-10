@@ -5,7 +5,7 @@
 }
 
 body {  /*Sidans BC och bredd*/
-    background-color: rgba(208, 243, 232, 0.548);
+    background-color: white;
     width: 100vw; 
 }
 
@@ -19,17 +19,7 @@ h1 {  /*Huvudrubrik styling för mobil och desktop*/
     }
 }
 
-.tips-h1 {  /*h1 till tips.html*/
-    font: normal 24px Open Sans;
-    color: black;
-    margin: 1rem 0;
-    @media only screen and (min-width: 600px) {
-        margin: auto  auto 0 0;
-        padding-left: 1rem;
-    }
-}
-
-h2 {
+h2 {    /*Underrubriker*/
     color: white;
     font: bold 24px Open Sans;
     text-align: center;
@@ -41,7 +31,7 @@ h2 {
     }
 }
 
-.tips-h2 {
+.tips-h2 {  /*Underrubriker på tips-sida*/
     padding-top: 30%;
     padding-bottom: 2rem;
 }
@@ -79,6 +69,7 @@ p {  /*Stycke styling för mobil och desktop*/
 }
 
 .page {   /*Centrera och begränsa sidinnehållets bredd*/
+    background-color: rgb(208, 252, 237);
     max-width: 990px;
     margin: auto;
 }
@@ -88,9 +79,8 @@ header {   /*Header box*/
 }
 
 .hamburger {   /*Hamburger-meny*/
-    background-color: #91919183; /*Ligger BC för att det ska synas på ljus sidbakgrund */
     position: fixed; /*för att hamburger-menyn ska vara tillgänglig hela vägen till botten*/
-    z-index: 10;
+    z-index: 2;
     right: 0;
     padding: .6rem .6rem .3rem .6rem;
     @media only screen and (min-width: 600px) {
@@ -171,6 +161,10 @@ header {   /*Header box*/
     cursor: pointer;
 }
 
+.icon--stor {
+    height: 80%;
+}
+
 .icon--card {
     position: absolute;
     top: 40%;
@@ -185,6 +179,7 @@ header {   /*Header box*/
 }
 
 .nav-list {
+    background-color: rgb(242, 253, 253);
     display: none;
     @media only screen and (min-width: 600px) {
         display: flex;
@@ -211,32 +206,80 @@ header {   /*Header box*/
     }
 }
 
-.form {  /*formulär på tips.tml sida*/
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+.formular {  /*formulär på tips sida*/
+    padding: 2rem;
     @media only screen and (min-width: 600px) {
-        flex-wrap: wrap;
         margin-top: 2rem;
     }
 }
 
-.form__lab {
-    font: normal 14px Open Sans;
+.tips-h1 {  /*h1 till tips.html*/
+    font: normal 24px Open Sans;
+    color: black;
+    margin: auto;
+    text-align: center;
+    @media only screen and (min-width: 600px) {
+        text-align: left;
+    }
 }
+
+.form{
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 24px min-content 24px min-content min-content;
+    grid-template-areas: "label1 label1 label1" "infield1 infield1 infield1" "label2 label2 label2" "infield2 infield2 infield2" ". knapp .";
+    @media only screen and (min-width: 600px) {
+        margin-top: 1rem;
+        column-gap: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 24px min-content min-content;
+        grid-template-areas: "label1 . label2 ." "infield1 infield1 infield2 infield2" ". knapp knapp .";
+    }
+}
+
+.form__lab {
+    font: normal 16px Open Sans;
+    margin-top: .5rem;
+}
+
+.form__lab--labelP {
+    grid-area: label1;
+}
+
+.form__lab--labelD {
+    grid-area: label2;
+}
+
 .form__inp {
-    width: 344px;
-    height: 52px;
+    /* width: 344px;
+    height: 52px; */
     border: none;
     border-radius: 5px;
     box-shadow: 0px 1px 3px 0px #4e4d4d;
-    margin: .5rem 0;
+    margin-bottom: .5rem;
     padding: 1.4rem;
     &::placeholder {
         font-size: 1.2rem;
         color: #A8A8A8;
     }
 }
+
+.form__inp--infieldP {
+    grid-area: infield1;
+}
+
+.form__inp--infieldD {
+    grid-area: infield2;
+}
+
+.form__button--center {
+    grid-area: knapp;
+    @media only screen and (min-width: 600px) {
+        justify-self: center;
+    }
+}
+
 
 .tips {
     display: flex;
@@ -285,7 +328,7 @@ header {   /*Header box*/
     }
 }
 
-button, .button {
+button, .button, .form__button {
     font-family: Open Sans;
     font-style: normal;
     font-size: large;
@@ -293,6 +336,7 @@ button, .button {
     background-color: rgba(10, 132, 110, 1);
     border: none;
     border-radius: 10px;
+    max-width: 200px;
     color: white;
     padding: .5rem 1.5rem;
     text-align: center;
@@ -347,7 +391,7 @@ main {
 }
 
 .plant-tips {
-    padding: 1rem 0 2rem;
+    padding: 1rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(1, 350px);
@@ -360,7 +404,7 @@ main {
 }
 
 .plant-tips2 {
-    padding: 1rem 0 2rem;
+    padding: 1rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(1, 350px);
@@ -373,6 +417,7 @@ main {
 }
 
 .card {
+    background-color: rgb(242, 253, 253);
     background-size: 100% 80%;
     background-repeat: no-repeat;
     position: relative;
@@ -425,30 +470,32 @@ main {
     align-items: center;
 }
 
-.info {
+.info {  /*Avslutningsbild med logo och fält med kontaktuppgifter*/
     height: 600px;
     position: relative;
     background-image: url("assets/images/handsidan.avif");
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
     @media only screen and (min-width: 600px) {
         height: 500px;
     }
 }
 
-.info-logo {
+.info-logo {  /*Välj storlek på fält för ikon beroende av skärmstorlek*/
+    height: 50%;
+    width: 100%;
     position: absolute;
-    padding-top: 10%;
-    /* left: 30%; */
+    top:0%;
+    left: 0%;
     @media only screen and (min-width: 600px) {
-        top: 25%;
-        left: 60%;
+        height: 100%;
+        width: 50%;
+        top: 0%;
+        left: 50%;
     }
 }
 
-.info-content {
+.info-content {  /*Fält för kontaktinformation z över avslutningsbild*/
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0); 
@@ -456,53 +503,100 @@ main {
     color: #f1f1f1;
     width: 100%;
     height: 50%;
+    top: 50%;
+    left: 0%;
     padding: 1rem;
+    align-content: end;
     @media only screen and (min-width: 600px){
         width: 50%;
         height: 100%;
+        top: 0%;
     }
 }
 
-.info-content__ktk {
+.info-content__greeting {  /*Rubrik i fält för kontaktinformation*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+.info-content__ktk {  /*Kontaktinformationsfält styling*/
     height: 36px;
-    margin: 30px 0 16px 0;
+    bottom: 5%;
     display: flex;
     justify-content: space-between;
-    @media only screen and (min-width: 600px){
-        margin: 100px 0 0 0;
-    }
+    align-items: center;
 }
 
-.info-content__ktk--link {
+.info-content__ktk--link {  /*Styling av länk med ikon*/
     color: white;
     text-decoration: none;
     font-family: Open Sans;
-    padding-bottom: .2rem;
+    display: inline-flex;
+    p {
+        color: white;
+        margin: 0 .5rem;
+    }
 }
 
-.info-content__data {
+.info-content__data {  /*Fält med en kontaktinformationsuppgift*/
     height: 100%;
-   vertical-align: middle;
+    display: inline-flex;
 }
 
-.gallery {
+.gallery {  /*Grundinställningar för galleri på tips-sida*/
+    background-color: rgba(158, 109, 82, 1);
     margin-top: 2rem;
-    height: 220px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.gallery__img {
-    width: 100px;
-    height: 30px;
-}
-
-.flut {
+    padding: 1rem;
     width: 100%;
-    margin:  1rem auto;
-    padding: 1rem 0;
 }
-.flut__move {
+
+.gallery__img {  /*Galleri-grid på tips-sida*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 124px);
+    gap: 1rem;
+    grid-template-areas: "a1 b1"
+    "a2 b2";
+    @media only screen and (min-width: 600px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 300px);
+        gap: 1rem;
+        grid-template-areas: "a1 b1 a2 b2";
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.gallery__img--cola1 {  /*Modifier för att placera i galleri-grid*/
+    grid-area: a1;
+}
+
+.gallery__img--cola2 {  /*Modifier för att placera i galleri-grid*/
+    grid-area: a2;
+}
+
+.gallery__img--colb1 {  /*Modifier för att placera i galleri-grid*/
+    grid-area: b1;
+}
+
+.gallery__img--colb2 {  /*Modifier för att placera i galleri-grid*/
+    grid-area: b2;
+}
+
+.flytt {  /*Styling för avslutande del i sidfot med länk*/
+    background-color: blue;
+    width: 100%;
+    min-height: min-content;
+    padding: 1rem;
+    text-align: center;
+}
+
+.flytt__move {  /*Styling av retur-länk*/
     font: bold 16px Open Sans;
     color: black;
     text-decoration: none;

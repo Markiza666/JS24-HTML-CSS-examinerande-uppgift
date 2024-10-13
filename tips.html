@@ -16,103 +16,103 @@
     </head>
     <body>
         <div class="page">
-            <header class="header2" id="top">
-                <div class="hamburger">
-                    <a href="index.html">
-                        <img src="assets/icons/burgir.png" alt="#">  
-                        <!-- Ikonen är klickbar för att gå tillbaka till hemsidan -->
-                    </a>
-                </div>
-                <div class="hero">  
+            <header class="header" id="top">
+                <a class="hamburger" href="index.html">
+                    <img src="assets/icons/burgir.png" alt="#">  <!-- Ikonen är klickbar för att gå tillbaka till hemsidan -->
+                </a>
+                <picture class="hero2">  
                     <a class="icon" href="index.html">
                         <img class="icon icon--center" src="assets/icons/Logo.svg" alt="Logotyp">   
                         <!-- Ikonen är klickbar för att gå tillbaka till hemsidan -->
                     </a>
                     <h2 class="tips-h2">Mina sidor</h2>
-                </div>
+                </picture>
             </header>
             <main>
                 <section class="formular">
                     <h1 class="tips-h1">Lägg till ny plantering:</h1>
                     <form class="form" action="#">
-                        <label class="form__lab form__lab--labelP" for="namn">Planta:</label><br>
-                        <input class="form__inp form__inp--infieldP" type="text" id="namn" name="namn" placeholder="Text"><br>
-                        <label class="form__lab form__lab--labelD" for="data">Datum:</label><br>
-                        <input class="form__inp form__inp--infieldD" type="text" id="data" name="data" placeholder="XX-XX-XXXX"><br>
+                        <label class="form__label form__label-labelP" for="namn">Planta:</label><br>
+                        <input class="form__input form__input--infieldP" type="text" id="namn" name="namn" placeholder="Text"><br>
+                        <label class="form__label form__label--labelD" for="data">Datum:</label><br>
+                        <input class="form__input form__input--infieldD" type="text" id="data" name="data" placeholder="DD-MM-YYYY"><br>
                         <input class="form__button form__button--center" type="submit" value="Lägg till">
                     </form>
                 </section>
-                <h3>Dina planerade planteringar:</h3>
                 <section class="plant-tips">
-                    <article class="card card--pic1">
-                        <figure>
-                          <img class="icon icon--card" src="assets/icons/plant.svg" alt="#">
-                        </figure>
-                        <div class="card bg-descript">
-                            <div class="row1">
-                            <h5>Gurka</h5>
-                            <h5>15 april 2024</h5>
-                            </div>
-                            <div class="row2">
-                            <p class="p2">Rico Coolio</p>
-                            <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
-                            </div>
-                        </div>
-                    </article>
-                </section class="plant-tips2">
-                <h3>Dina planerade planteringar:</h3>
-                <section class="plant-tips2">
+                    <h3 class="h3">Dina planerade planteringar:</h3>
                     <article class="card card--pic1">
                         <figure>
                             <img class="icon icon--card" src="assets/icons/plant.svg" alt="#">
+                            <figure class="card card--descript-bg-white">
+                                <figcaption class="card__row1">
+                                    <h4>Tomat</h4>
+                                    <h5>15 april 2024</h5>
+                                </figcaption>
+                                <figcaption class="card__row2">
+                                    <p class="p2">Rico Coolio</p>
+                                    <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
+                                    <button class="card__button card__button--red">TA BORT</button>
+                                </figcaption>
+                            </figure>
                         </figure>
-                        <div class="card bg-descript">
-                            <div class="row1">
-                                <h5>Gurka</h5>
-                                <h5>15 april 2024</h5>
-                            </div>
-                            <div class="row2">
-                                <p class="p2">Rico Coolio</p>
-                                <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
-                            </div>
-                        </div>    
+                    </article>
+                </section>
+                <section class="plant-tips2">
+                    <h3 class="h3">Dina planerade planteringar:</h3>
+                    <article class="card card--pic1">
+                        <figure>
+                            <img class="icon icon--card" src="assets/icons/plant.svg" alt="#">
+                            <figure class="card card--descript-bg-white">
+                                <figcaption class="card__row1">
+                                    <h4>Tomat</h4>
+                                    <h5>15 april 2024</h5>
+                                </figcaption>
+                                <figcaption class="card__row2">
+                                    <p class="p2">Rico Coolio</p>
+                                    <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
+                                    <button class="card__button card__button--red">TA BORT</button>
+                                </figcaption>
+                            </figure>
+                        </figure>
                     </article>
                     <article class="card card--pic2">
                         <figure>
                             <img class="icon icon--card" src="assets/icons/plant.svg" alt="#">
+                            <figure class="card card--descript-bg-white">
+                                <figcaption class="card__row1">
+                                    <h4>Tomat</h4>
+                                    <h5>15 april 2024</h5>
+                                </figcaption>
+                                <figcaption class="card__row2">
+                                    <p class="p2">Rico Coolio</p>
+                                    <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
+                                    <button class="card__button card__button--red">TA BORT</button>
+                                </figcaption>
+                            </figure>
                         </figure>
-                        <div class="card bg-descript">
-                            <div class="row1">
-                                <h5>Gurka</h5>
-                                <h5>15 april 2024</h5>
-                            </div>
-                            <div class="row2">
-                                <p class="p2">Rico Coolio</p>
-                                <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
-                            </div>
-                        </div>
                     </article>
                 </section>
-                <div class="gallery">
-                    <div class="gallery__img">
-                        <figure class="gallery__img--cola1">
-                            <img src="assets/images/tjejmedhatt.avif" alt="">
-                        </figure>
-                        <figure class="gallery__img--cola2">
-                            <img src="assets/images/plockar.avif" alt="">
-                        </figure>
-                        <figure class="gallery__img--colb1">
-                            <img src="assets/images/massagrönsaker.avif" alt="">
-                        </figure>
-                        <figure class="gallery__img--colb2">
-                            <img src="assets/images/vattenkanna.avif" alt="">
-                        </figure>
-                    </div>
-                </div>
+                <picture class="gallery">
+                    <figure class="gallery__img--cola1">
+                        <img src="assets/images/tjejmedhatt.avif" alt="">
+                    </figure>
+                    <figure class="gallery__img--cola2">
+                        <img src="assets/images/plockar.avif" alt="">
+                    </figure>
+                    <figure class="gallery__img--colb1">
+                        <img src="assets/images/massagrönsaker.avif" alt="">
+                    </figure>
+                    <figure class="gallery__img--colb2">
+                        <img src="assets/images/vattenkanna.avif" alt="">
+                    </figure>
+                </picture>
             </main>
-            <div class="flytt">
-                <a class="flytt__move" href="#top">Till toppen av sidan<img style="width: 24px; margin-left: .5rem;" src="assets/icons/arrow_upward_48dp_5F6368.svg" alt=""></a>
-            </div>
+            <footer>
+                <section class="retur-link">
+                    <a class="retur-link__move" href="#top">Till toppen av sidan<img class="retur-link__arrow" src="assets/icons/arrow_upward_48dp_5F6368.svg" alt=""></a>
+                </section>
+            </footer>
         </div>
     </body>
 </html>

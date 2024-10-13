@@ -16,204 +16,201 @@
   </head>
   <body>
     <div class="page">
-      <header id="top">
+      <header class="header" id="top">
         <!--Hamburgermenyn-->
-        <div class="hamburger">
-          <a href="tips.html">
-            <img src="assets/icons/burgir.png" alt="#"></a>
-        </div>
-        <div class="grid">
+        <figure class="hamburger">
+          <a href="tips.html"><img src="assets/icons/burgir.png" alt="#"></a>
+        </figure>
+        <picture class="hero">
           <!--Hero-bild och hjärt-ikon-->
-          <figure class="grid-item">
+          <figure class="hero-bild">
             <img class="icon icon--center" src="assets/icons/Logo.svg" alt="Logotyp">
           </figure>
           <!--Ikon plantor-->
-          <figure class="grid-item2">
+          <figure class="hero-ikon1">
             <img class="icon icon--center" src="assets/icons/seedling.svg" alt="Seedling">
           </figure>
           <!--Ikon spade-->
-          <figure class="grid-item3">
+          <figure class="hero-ikon2">
             <img class="icon icon--center" src="assets/icons/dig.svg" alt="Dig">
           </figure>
-        </div>
+        </picture>
         <!-- Navigationsmeny för desktop -->
         <nav class="nav-list">
-          <ul class="nav-bar">
-            <li class="nav-bar__li">
-              <a href="tips.html">PLANER</a>
+          <menu class="nav-bar">
+            <li class="nav-bar__part">
+              <a class="nav-bar__item" href="tips.html">PLANER</a>
             </li>
-            <li class="nav-bar__li">
-              <a href="tips.html">HISTORIK</a>
+            <li class="nav-bar__part">
+              <a class="nav-bar__item" href="tips.html">HISTORIK</a>
             </li>
-            <li class="nav-bar__li">
-              <a href="tips.html">TIPS</a>
+            <li class="nav-bar__part">
+              <a class="nav-bar__item" href="tips.html">TIPS</a>
             </li>
-            <li class="nav-bar__li">
-              <a href="tips.html">LOGGA IN</a>
+            <li class="nav-bar__part">
+              <a class="nav-bar__item" href="tips.html">LOGGA IN</a>
             </li>
-          </ul>
+          </menu>
         </nav>  
       </header>
       <main>
         <h1>PLANNED PLANTHOOD</h1>
         <!-- Sektion med tips -->
-        <div class="tips">
-          <aside class="tips__text">
+        <section class="tips">
+          <article class="tips__text">
             <h3>Säsong att så</h3>
             <p>Våren är äntligen här i kollektivet!
             </p> 
             <p>Lorem ipsum dolor sit amet consectetur. Sit venenatis arcu nunc consectetur neque. Vel amet netus amet eu elit.</p>
             <button class="tips__button tips__button--right">SÅ-TIPS</button>
-          </aside>
+          </article>
           <!-- Ikon för så-tips -->
           <figure class="tips__plant">
             <img src="assets/icons/Vectorseedpackage.svg" alt="Seedpackage">
           </figure>
-        </div>
+        </section>
         <hr>
         <!--Sektion med kort-->
-        <h3>
-          Våra planerade planteringar:
-        </h3>
         <section class="plant">
+          <h3 class="h3">Våra planerade planteringar:</h3>
           <article class="card card--pic1">
             <figure>
               <img class="icon icon--card" src="assets/icons/plant.svg" alt="#">
+              <figure class="card card--descript-bg-white">
+                <figcaption class="card__row1">
+                  <h4>Tomat</h4>
+                  <h5>15 april 2024</h5>
+                </figcaption>
+                <figcaption class="card__row2">
+                  <p class="p2">Rico Coolio</p>
+                  <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
+                  <button class="card__button card__button--red">TA BORT</button>
+                </figcaption>
+              </figure>
             </figure>
-            <!-- Testar -->
-            <div class="card bg-descript">
-              <div class="row1">
-                <h5>Gurka</h5>
-                <h5>15 april 2024</h5>
-              </div>
-              <div class="row2">
-                <p class="p2">Rico Coolio</p>
-                <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
-              </div>
-          </div>
-            <!-- <div class="row1">
-              <h5>Gurka</h5>
-              <h5>15 april 2024</h5>
-            </div>
-            <div class="row2">
-              <p class="p2">Rico Coolio</p>
-              <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
-            </div> -->
           </article>
           <article class="card card--pic2">
             <figure>
               <img class="icon icon--card" src="assets/icons/plant.svg" alt="#">
+              <figure class="card card--descript-bg-white">
+                <figcaption class="card__row1">
+                  <h4>Tomat</h4>
+                  <h5>15 april 2024</h5>
+                </figcaption>
+                <figcaption class="card__row2">
+                  <p class="p2">Rico Coolio</p>
+                  <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
+                  <button class="card__button card__button--red">TA BORT</button>
+                </figcaption>
+              </figcaption>
             </figure>
-            <div class="card bg-descript">
-              <div class="row1">
-                <h5>Gurka</h5>
-                <h5>15 april 2024</h5>
-              </div>
-              <div class="row2">
-                <p class="p2">Rico Coolio</p>
-                <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
-              </div>
-            </div>
           </article>
           <article class="card card--pic3">
             <figure>
-              <img class="icon  icon--card" src="assets/icons/plant.svg" alt="#">
+              <img class="icon icon--card" src="assets/icons/plant.svg" alt="#">
+              <figure class="card card--descript-bg-white">
+                <figcaption class="card__row1">
+                  <h4>Gurka</h4>
+                  <h5>15 april 2024</h5>
+                </figcaption>
+                <figcaption class="card__row2">
+                  <p class="p2">Rico Coolio</p>
+                  <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
+                  <button class="card__button card__button--red">TA BORT</button>
+                </figcaption>
+              </figcaption>
             </figure>
-            <div class="card bg-descript">
-              <div class="row1">
-                <h5>Gurka</h5>
-                <h5>15 april 2024</h5>
-              </div>
-              <div class="row2">
-                <p class="p2">Rico Coolio</p>
-                <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
-              </div>
-            </div>
           </article>
           <article class="card card--pic4">
             <figure>
               <img class="icon icon--card" src="assets/icons/plant.svg" alt="#">
+              <figure class="card card--descript-bg-white">
+                <figcaption class="card__row1">
+                  <h4>Gurka</h4>
+                  <h5>15 april 2024</h5>
+                </figcaption>
+                <figcaption class="card__row2">
+                  <p class="p2">Rico Coolio</p>
+                  <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
+                  <button class="card__button card__button--red">TA BORT</button>
+                </figcaption>
+              </figure>
             </figure>
-            <div class="card bg-descript">
-              <div class="row1">
-                <h5>Gurka</h5>
-                <h5>15 april 2024</h5>
-              </div>
-              <div class="row2">
-                <p class="p2">Rico Coolio</p>
-                <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
-              </div>
-            </div>
           </article>
           <article class="card card--pic5">
-            <figure">
+            <figure>
               <img class="icon icon--card" src="assets/icons/plant.svg" alt="#">
+              <figure class="card card--descript-bg-white">
+                <figcaption class="card__row1">
+                  <h4>Tomat</h4>
+                  <h5>15 april 2024</h5>
+                </figcaption>
+                <figcaption class="card__row2">
+                  <p class="p2">Rico Coolio</p>
+                  <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
+                  <button class="card__button card__button--red">TA BORT</button>
+                </figcaption>
+              </figure>
             </figure>
-            <div class="card bg-descript">
-              <div class="row1">
-                <h5>Gurka</h5>
-                <h5>15 april 2024</h5>
-              </div>
-              <div class="row2">
-                <p class="p2">Rico Coolio</p>
-                <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
-              </div>
-            </div>
           </article>
           <article class="card card--pic6">
             <figure>
               <img class="icon icon--card" src="assets/icons/plant.svg" alt="#">
+              <figure class="card card--descript-bg-white">
+                <figcaption class="card__row1">
+                  <h4>Gurka</h4>
+                  <h5>15 april 2024</h5>
+                </figcaption>
+                <figcaption class="card__row2">
+                  <p class="p2">Rico Coolio</p>
+                  <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
+                  <button class="card__button card__button--red">TA BORT</button>
+                </figcaption>
+              </figure>
             </figure>
-            <div class="card bg-descript">
-              <div class="row1">
-                <h5>Gurka</h5>
-                <h5>15 april 2024</h5>
-              </div>
-              <div class="row2">
-                <p class="p2">Rico Coolio</p>
-                <img class="icon icon--low-right" src="assets/icons/Vector (Stroke).svg" alt="#">
-              </div>
-            </div>
           </article>
+          <button class="plant__button plant__button--center">VISA FLER</button>
         </section>
-        <button>VISA FLER</button>
-        <div class="tips">
+        <section class="tips">
           <figure class="tips__plant">
             <img src="assets/icons/plant.svg" alt="Plant">
           </figure>
-          <div class="tips__text">
+          <article class="tips__text">
             <h3>Våra tidigare odlingar</h3>
             <p>Våren är äntligen här i kollektivet!</p> 
             <p>Lorem ipsum dolor sit amet consectetur. Sit venenatis arcu nunc consectetur neque. Vel amet netus amet eu elit.</p>
             <button class="tips__button tips__button--left">Planterade plantor</button>
-          </div>
-        </div>
+          </article>
+        </section>
       </main>
       <footer class="info">
-        <div class="info-logo">
+        <figure class="info-logo">
           <img class="icon icon--stor icon--center" src="assets/icons/Logo.svg" alt="logo">
-        </div>
-        <div class="info-content">
-          <div class="info-content__greeting"><h2>Vi hörs!</h2></div>
-          <div class="info-content__ktk">
-            <div class="info-content__data">
-              <a class="info-content__ktk--link" href="">
+        </figure>
+        <section class="info-content">
+          <h2 class="info-content-greeting">Vi hörs!</h2>
+          <ul class="info-content-data">
+            <li class="info-content-data__txt">
+              <a class="info-content-data__txt--link" href="tips.html">
                 <img src="assets/icons/telephone.svg" alt="mob" width="24px" height="24px">
-                  <p>0701-234567</p>
+                <figcaption class="info-content-data__txt--space-around">0701-234567</figcaption>
               </a>
-            </div>
-            <div class="info-content__data">
-              <a class="info-content__ktk--link" href="">
-                <p>mail@mail.se</p>
+            </li>
+            <li class="info-content-data__txt">
+              <a class="info-content-data__txt--link" href="tips.html">
+                <figcaption class="info-content-data__txt--space-around">mail@mail.se</figcaption>
+                <img src="assets/icons/envelope.svg" alt="mail" width="24px" height="24px">
               </a>
-              <img src="assets/icons/envelope.svg" alt="mail" width="24px" height="24px">
-            </div>
-          </div>
-        </div>
+            </li>
+          </ul>
+        </section>
       </footer>
-      <div class="flytt">
-        <a class="flytt__move" href="#top">Till toppen av sidan<img style="width: 24px; margin-left: .5rem;" src="assets/icons/arrow_upward_48dp_5F6368.svg" alt=""></a>
-      </div>
+      <section class="retur-link">
+        <a class="retur-link__move" href="#top">
+          <figcaption>Till toppen av sidan</figcaption>
+          <img class="retur-link__arrow" src="assets/icons/arrow_upward_48dp_5F6368.svg" alt="">
+        </a>
+      </section>
     </div>
   </body>
 </html>
